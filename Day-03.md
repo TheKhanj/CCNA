@@ -65,3 +65,5 @@
 > **Application** layer provides **process-to-process** communication
 
 > **Transport** layer provides **host-to-host** or **end-to-end** communication
+
+> **Data Link** layer provides **node-to-node** communication
