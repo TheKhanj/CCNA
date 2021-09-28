@@ -19,6 +19,13 @@ Contains **layer 1** and **layer 2** of OSI Model
     * **1 byte**
     * Is exactly **10101011**
     * It indicates **ends** of the preamble and the **begining** of the frame
+> **Preamble** and **SFD** is usually not considered part of ethernet header
+
+> There is a minimum limit for **frame size** which is **64 bytes**  
+> Considering total size of header and trailer(excluding preamble and SFD)
+> is **18 bytes**, so **minimum packet size** is **46 bytes**  
+> If payload is less than 46 bytes **paddings** are added which are **zeroes**
+
 3. Destintaion
     * Consist of destination **MAC Address**
 > **MAC** stands for **Media Access Control**  
@@ -63,7 +70,7 @@ Contains **layer 1** and **layer 2** of OSI Model
 > their MAC Address
 
 > On cisco switches MAC Addresses are **removed** from the table in **5 minutes**
-> of inactivity
+> of inactivity, this is known as **Aging**
 
 ## Types of Ethernet Frames
 * **Unicast frame**
@@ -78,6 +85,8 @@ Contains **layer 1** and **layer 2** of OSI Model
     * So it **FLOOD** the frame, which means for through all of it's interfaces,
       except the port which received packet on
 * **Broadcast frame**
+  * Sends message to **all** devices in **LAN**
+  * **FFFF:FFFF:FFFF** is broadcast destination MAC address
 
 > **Dynamically Learned MAC Address** is a feature in switches to learn
 > MAC Addresses connected to each ethernet port of them
