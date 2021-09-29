@@ -87,6 +87,8 @@ Contains **layer 1** and **layer 2** of OSI Model
 * **Broadcast frame**
   * Sends message to **all** devices in **LAN**
   * **FFFF:FFFF:FFFF** is broadcast destination MAC address
+* **Multicast frame**
+  * ?
 
 > **Dynamically Learned MAC Address** is a feature in switches to learn
 > MAC Addresses connected to each ethernet port of them
