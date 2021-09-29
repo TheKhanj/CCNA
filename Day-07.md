@@ -23,20 +23,22 @@
 > Each of **8 bits** groups are refered to as **Octects**
 
 # IPv4 Address Classes
-| Class | First Octet | First Octet Numeric | Prefix Length |
-| ----- | ----------- | ------------------- | ------------- |
-|   A   |  0XXXXXXX   |       0 - 127       |      /8       |
-|   B   |  10XXXXXX   |     128 - 191       |      /16      |
-|   C   |  110XXXXX   |     192 - 223       |      /24      |
-|   D   |  1110XXXX   |     224 - 239       |               |
-|   E   |  1111XXXX   |     240 - 255       |               |
+| Class | First Octet | First Octet Numeric   | Prefix Length |
+| ----- | ----------- | --------------------- | ------------- |
+|   A   |  0XXXXXXX   | 1 ~~0~~ - ~~127~~ 126 |      /8       |
+|   B   |  10XXXXXX   |       128 - 191       |      /16      |
+|   C   |  110XXXXX   |       192 - 223       |      /24      |
+|   D   |  1110XXXX   |       224 - 239       |               |
+|   E   |  1111XXXX   |       240 - 255       |               |
 
 > **Class D** is reserved for **multicast addressses**  
 > **Class E** is reserved for **experimental uses**
 
 > The end of **class A** is usually considered to be **126** not **127**  
 > * **127** is reserved for **loopback** addresses
-> * Is used to test the **network stack** on the local device
+> * Is used to test the **network stack** on the local device  
+> Also start of **Class A** is considered to be **1**  
+> **0** is reserved for something else
 
 > **First** address of network is **network address**, 192.168.1.**0**  
 > **Last** address of network is **broadcast address**, 192.168.1.**255**
