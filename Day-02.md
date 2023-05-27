@@ -2,7 +2,7 @@
 
 > **Ethernet** defined in IEEE 802.3 standard in 1983.
 
-> **IEEE** stands for Institude of Electrical and Electronics Engineers
+> **IEEE** stands for institude of Electrical and Electronics Engineers
 
 ## Ethernet Standards
 | Speed    | Common Name         | IEEE Standard | Informal Name |
@@ -13,13 +13,15 @@
 | 10 Gbps  | 10 Gigabit Ethernet | 802.3an       | 10G-Base-T    |
 
 ## **UTP** Cables
-> **UTP** stands for Unshilded Twisted Pair
+> **UTP** stands for Unshielded Twisted Pair
 
 ### **Ethernet** and **Fast Ethernet**
 uses 2 pairs (**4 wires**)
 
 ### **Gigabit** Ethernet and **10 Gigabit** Ethernet
 uses 4 pairs (**8 wires**)
+
+---
 
 #### **Straight-through** cable on 4 wires
 > Transmit(Tx)  **1 ---> 1**  Receive(Rx)  
@@ -33,6 +35,8 @@ uses 4 pairs (**8 wires**)
 > Receive(Rx)   **3 <--- 1**  Transmit(Tx)  
 > Receive(Rx)   **6 <--- 2**  Transmit(Tx)
 
+---
+
 ##### Transmit pins table
 | Device Type | Transmit Pins (Tx) | Receive Pins (Rx) |
 | ----------- | ------------------ | ----------------- |
@@ -43,6 +47,8 @@ uses 4 pairs (**8 wires**)
 
 > **Auto MDI-X** is a feature to handle pin switching for devices which have same
 > receive and transmit pins attached to each other
+
+---
 
 #### **Straight-through** cable on 8 wires
 > Each pair is **bidirectional**  
@@ -60,23 +66,29 @@ Consists of two fiber-optic cable, one for Tx and one for Rx.
 
 > **SFP Transceiver** stands for Small Form-factor Pluggable
 
+---
+
 ## **Fiber-Optic Cable**
 1. Fiberglass core
 2. Cladding that reflects light
 3. A protective buffer
 4. Outer jacket of cable
 
+---
+
 ### **Mode**
 1. Single-mode
   * Narrower
   * Laser based transmitter
   * Longer cable length
-  * Expensiver, due to expensive laser-based SFP transmitter
+  * More expensive, due to expensive laser-based SFP transmitter
 2. Multimode
   * Core is wider
   * Allow multiple angles (modes) of light
   * Longer cable than UTP, But **Shorter** than single-mode fibers
   * Cheaper than single mode, cheaper LED based SFP transmitter
+
+---
 
 ## Fiber-Optic Standards
 | Speed    | Cable Type          | IEEE Standard | Informal Name | Length              |
