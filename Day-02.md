@@ -22,16 +22,16 @@ uses 2 pairs (**4 wires**)
 uses 4 pairs (**8 wires**)
 
 #### **Straight-through** cable on 4 wires
-> Transmit(Tx)  **1 ---> 1**  Recieve(Rx)  
-> Transmit(Tx)  **2 ---> 2**  Recieve(Rx)  
-> Recieve(Rx)   **3 <--- 3**  Transmit(Tx)  
-> Recieve(Rx)   **6 <--- 6**  Transmit(Tx)
+> Transmit(Tx)  **1 ---> 1**  Receive(Rx)  
+> Transmit(Tx)  **2 ---> 2**  Receive(Rx)  
+> Receive(Rx)   **3 <--- 3**  Transmit(Tx)  
+> Receive(Rx)   **6 <--- 6**  Transmit(Tx)
 
 #### **Crossover** cable on 4 wires
-> Transmit(Tx)  **1 ---> 3**  Recieve(Rx)  
-> Transmit(Tx)  **2 ---> 6**  Recieve(Rx)  
-> Recieve(Rx)   **3 <--- 1**  Transmit(Tx)  
-> Recieve(Rx)   **6 <--- 2**  Transmit(Tx)
+> Transmit(Tx)  **1 ---> 3**  Receive(Rx)  
+> Transmit(Tx)  **2 ---> 6**  Receive(Rx)  
+> Receive(Rx)   **3 <--- 1**  Transmit(Tx)  
+> Receive(Rx)   **6 <--- 2**  Transmit(Tx)
 
 ##### Transmit pins table
 | Device Type | Transmit Pins (Tx) | Receive Pins (Rx) |
